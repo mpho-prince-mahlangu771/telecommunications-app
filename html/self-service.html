@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Self-service app| Welcome</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#opt-balance").click(function(){
+                $("#opt-output").load('balances.html')
+            });
+
+            $("#opt-purchase-bundle").click(function(){
+                $("#opt-output").load('purchase-bundle.html')
+            });
+
+            $("#opt-share").click(function(){
+                $("#opt-output").load('share.html')
+            });
+            
+            
+        });
+    </script>
+</head>
+<body>
+    <!-- ss -stands for self-service -->
+    <!-- usr -stands for user -->
+    <header id="ss-header">
+        <figure>
+            <img class="ss-logo-img" src="../img/voda-logo.svg" alt="vodacom logo">
+        </figure>
+        <h1>Welcome, to the Vodacom self-service app</h1>
+    </header>
+    <main id="ss-main">
+        <div id="opt-output" class="balance-summary">
+            <h2>Current balance for 0606788746:</h2>
+            <p>Airtime: R35</p>
+            <p>Data: 2GB</p>
+            <p>SMS: 12</p>
+            <p>Voice: 60 minutes</p>
+            <a href="#">Show detailed balances</a>
+        </div>
+        <div class="purchase-bundle">
+            <div class="user-options">
+                <h2>Good Afternoon Mpho, what do you wanna do today?</h2>
+                <div class="usr-option-container">
+                     <a id="opt-purchase-bundle" href="./purchase-bundle.html">Purchase a bundle</a>
+                </div>
+                <div class="usr-option-container">
+                    <a id="opt-share" href="#">Share my bundle/airtime</a>
+                </div>
+                <div class="usr-option-container">
+                     <a id="opt-advance" href="#">Make an airtime advance</a>
+                </div>
+                </div>
+        </div>
+    </main>
+</body>
+<!-- <div class="user-options">
+    <h2>Good Afternoon Mpho, what do you wanna do today?</h2>
+    <div class="usr-option-container">
+        <a id="opt-balance" href="#">View balance</a>
+    </div>
+    <div class="usr-option-container">
+        <a id="opt-purchase-bundle" href="#">Purchase a bundle</a>
+    </div>
+    <div class="usr-option-container">
+        <a id="opt-share" href="#">Share my bundle/airtime</a>
+    </div>
+    <div class="usr-option-container">
+        <a id="opt-advance" href="#">Make an airtime advance</a>
+    </div>
+</div> -->
+
+<!-- <h2>purchase a bundle</h2>
+<form>
+    <label>Please select the type of bundle</label>
+    <select>
+        <option>--select bundle type--</option>
+        <option>SMS</option>
+        <option>DATA</option>
+        <option>MINUTES</option>
+    </select>
+    <label>Please select the duration</label>
+    <select>
+        <option>1-day</option>
+        <option>7-days</option>
+        <option>14-days</option>
+        <option>30-days</option>
+    </select>
+    
+</form> -->
+
+</html>

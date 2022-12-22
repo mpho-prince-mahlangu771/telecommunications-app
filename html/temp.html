@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome | Sign Up for an ACME account</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- got inspiration from postman's sign-up page -->
+  <div class="sign-up-container">
+    <main class="main-sign-up">
+      <section class="left-section">
+        <header class="sign-up-hero-header">
+          <img src="./img/elephant-home-go.png" alt="A red elephant logo">
+          <h1>ACME Telecommunications</h1>
+        </header>
+        <article>
+            <h4>Here's what you can do with an account:</h4>
+            <ul>
+              <li>Access your profile at any time, from anywhere - desktop, mobile and app</li>
+              <li>view account balances, billing info and service subscriptions</li>
+              <li>Buy bundles and save!</li>
+              <li>Send 20 free SMSs daily</li>
+              <li>Transfer airtime...and many many other stuff!</li>
+            </ul>
+        </article>
+      </section>
+      <section class="right-section">
+        <header class="create-account-header">
+          <h4>Create an ACME account</h4>
+          <div>
+            <p>Already have an account? <a class="sign-up-link" href="#">sign-in</a></p>
+          </div>
+        </header>
+        <div class="sign-in-messages" style="display: none"></div> <!--notifies user about errors or success-->
+        <form action="">
+          <div class="form-group" >
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="Name" id="name" class="form-control" 
+            >
+            <div class="error"></div> <!--javascript error messages injected here-->
+        </div>
+        <div class="form-group">
+            <label id="surname-label" for="surname">Surname</label>
+            <input type="text" name="surname" id="surname" class="form-control" >
+            <div class="error"></div>
+        </div>
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" class="form-control" >
+        </div>
+        <div class="form-group ">
+            <button type="submit" id="submit" class="submit-btn">
+              <a class="next-link" href="./html/create_new_account.html">Next</a>
+            </button>
+        </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
